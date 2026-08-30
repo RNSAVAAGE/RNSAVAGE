@@ -1,0 +1,15 @@
+# BeEF configuration file
+
+# Network settings
+network:
+  host: "0.0.0.0"
+  port: 3000
+
+# Authentication settings
+# This is important for security!
+credentials:
+  user: "beef" pass: "beef"
+
+# Hook settings
+hook:
+  path: "/dns/hook.js"
