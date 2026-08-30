@@ -1,7 +1,13 @@
-FROM beefproject/beef:latest
+FROM ruby:3.0-slim
 
-# کپی کردن فایل تنظیمات از گیت‌هاب به داخل کانتینر
-COPY config.yaml /config.yaml
+# نصب پیش‌نیازهای لازم برای BeEF
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    build-essential \
+    libsqlite3-dev \
+    && rm -rf /var/lib/apt/lists/*# کار در پوشه اصلی
+WORKDIR /beef
 
-# دستور برای اجرا با استفاده از فایل تنظیمات جدید
-CMD ["./beef", "-c", "/config.yaml"]
+# دانلود مستقیم BeEF از گیت‌هاب
+RUN git clone https://github.com/beefproject/beef.git .
