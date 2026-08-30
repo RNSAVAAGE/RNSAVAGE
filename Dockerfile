@@ -1,4 +1,4 @@
-FROM ruby:3.0-slim
+FROM beefproject/beef:latest
 
 # نصب پیش‌نیازهای لازم برای BeEF
 RUN apt-get update && apt-get install -y \
