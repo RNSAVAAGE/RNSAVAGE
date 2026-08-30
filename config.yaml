@@ -1,8 +1,7 @@
 server:
-  host: "0.0.0.0"
-  port: 3000
-  public_host: "YOUR_RAILWAY_URL" #اینجا باید آدرس Railway خودت رو بذاری
-  public_port: 443
+  host: "0.0.0.0"  port: 3000
+  public_host: "YOUR_RAILWAY_URL"public_port: 443
 
 credentials:
-  user: "c29m29u"  passwd: "p455w0rd"
+  user: "c29m29u"
+  passwd: "p455w0rd"
