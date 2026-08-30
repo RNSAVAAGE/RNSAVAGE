@@ -1,15 +1,8 @@
-# BeEF configuration file
-
-# Network settings
-network:
-  host: "127.0.0.1"
+server:
+  host: "0.0.0.0"
   port: 3000
+  public_host: "YOUR_RAILWAY_URL" #اینجا باید آدرس Railway خودت رو بذاری
+  public_port: 443
 
-
-
-# Hook settings
-hook:
-  path: "/dns/hook.js"
-  beef: credentials:
-    user: "admin"
-    passwd: "RNSAVAGE"
+credentials:
+  user: "c29m29u"  passwd: "p455w0rd"
